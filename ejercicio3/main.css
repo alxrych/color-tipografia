@@ -1,0 +1,71 @@
+/* Estilos generales del body */
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.bloque-texto {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque-texto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para los títulos */
+h1,
+h2 {
+    color: #2c3e50;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    width: 100%;
+}
+
+h2 {
+    color: #e74c3c;
+    border-bottom-color: #e74c3c;
+}
+
+/* Estilos para los párrafos */
+.parrafos p {
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    color: #34495e;
+    font-size: 16px;
+    margin-bottom: 20px;
+    word-spacing: normal;
+    word-wrap: break-word;
+}
+
+/* Primer párrafo con estilo especial */
+.parrafos p:first-child {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Último párrafo sin margen inferior */
+.parrafos p:last-child {
+    margin-bottom: 0;
+}
